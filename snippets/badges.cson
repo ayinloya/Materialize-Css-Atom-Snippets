@@ -1,0 +1,10 @@
+'.text.html':
+  'Materialize badge with caption google icons':
+    'prefix': 'm-badge:caption'
+    'body': '<span class="badge" data-badge-caption="${1:custom caption}">${2:4}</span>'
+  'Materialize new badge with caption and google icons':
+    'prefix': 'm-badge:new-caption'
+    'body': '<span class="new badge" data-badge-caption="${1:custom caption}">${2:4}</span>'
+  'Materialize new badge with google icons':
+    'prefix': 'm-badge'
+    'body': '<span class="new badge">${1:Badge}</span>'
