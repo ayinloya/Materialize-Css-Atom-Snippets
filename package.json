@@ -1,0 +1,24 @@
+{
+  "name": "materialize-css",
+  "main": "./lib/materialize-css",
+  "version": "0.0.0",
+  "description": "This Materialized sublime plugin contains snippets of Materialized CSS components.
+Hope it improves your workflow. :)",
+  "keywords": [
+    "Material",
+    "Materialize",
+    "Snippets",
+    "Auto Complete",
+    "Materialize Css"
+  ],
+  "activationCommands": {
+    "atom-workspace": "materialize-css:toggle"
+  },
+  "repository": "https://github.com/ayinloya/Materialize-Css-Atom-Snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
