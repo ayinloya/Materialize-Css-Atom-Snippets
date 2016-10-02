@@ -11,6 +11,7 @@ Hope it improves your workflow. :)",
     "Auto Complete",
     "Materialize Css"
   ],
+  "description": "A short description of your package",
   "activationCommands": {
     "atom-workspace": "materialize-css:toggle"
   },
