@@ -1,0 +1,534 @@
+'.text.html, .text.html.php':
+  'Materialize badge with caption google icons':
+    'prefix': 'm-badge:caption'
+    'body': '<span class="badge" data-badge-caption="${1:custom caption}">${2:4}</span>'
+  'Materialize new badge with caption and google icons':
+    'prefix': 'm-badge:new-caption'
+    'body': '<span class="new badge" data-badge-caption="${1:custom caption}">${2:4}</span>'
+  'Materialize new badge with google icons':
+    'prefix': 'm-badge'
+    'body': '<span class="new badge">${1:Badge}</span>'
+  'Materialize old badge':
+    'prefix': 'm-badge-o'
+    'body': '<span class="badge">${1:Badge}</span>'
+  'Materialize breadcrumps':
+    'prefix': 'm-breadcrumps'
+    'body': """
+      <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#!" class="breadcrumb">${1:First}</a>
+            <a href="#!" class="breadcrumb">${2:Second}</a>
+            <a href="#!" class="breadcrumb">${3:Third}</a>
+          </div>
+        </div>
+      </nav>
+      """
+  'Materialize disabled':
+    'prefix': 'm-button:button'
+    'body': '<${1:button} ${2:type="button"} class="btn${3-large} disabled">${4:<i class="material-icons ${5:right}">${6:}"></i>}</${1:button}>'
+  'Materialize disabled button old':
+    'prefix': 'm-button:disabled-o'
+    'body': '<${1:button} ${2:type="button"} class="btn${3-large} disabled">${4:<i class="mdi-content-add ${5:right}"></i>}</${1:button}>'
+  'Materialize fixed floating button old':
+    'prefix': 'm-fixed-floating-button-o'
+    'body': """
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    	  <${1:button} ${2:type="button"} class="btn-floating btn-large ${3:red}">
+    	    <i class="large mdi-editor-mode-edit"></i>
+    	  </${1:button}>
+    	  <ul>
+    		  <li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    		  <li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    		  <li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    		  <li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    	  </ul>
+      </div>
+    """
+  'Materialize fixed floating button with hover effects':
+    'prefix': 'm-fixed-floating-button'
+    'body': """
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    	<${1:button} ${2:type="button"} class="btn-floating btn-large ${3:red}">
+    		<i class="large material-icons">mode_edit</i>
+    	</${1:button}>
+    	<ul>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">insert_chart</i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">format_quote</i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">publish</i>
+    		</${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">attach_file</i></${1:button}></li>
+    	</ul>
+    </div>
+    """
+  'Materialize fixed floating button':
+    'prefix': 'm-fixed-floating-button:horizontal-o'
+    'body': """
+      <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+    	<${1:button} ${2:type="button"} class="btn-floating btn-large ${3:red}">
+    		<i class="large mdi-editor-mode-edit"></i>
+    	</${1:button}>
+    	<ul>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="large mdi-editor-insert-chart"></i></${1:button}></li>
+    	</ul>
+    </div>
+    """
+  'Materialize fixed floating horizontal button with hover effects':
+    'prefix': 'm-fixed-floating-button:horizontal'
+    'body': """
+      <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+    	<${1:button} ${2:type="button"} class="btn-floating btn-large ${3:red}">
+    		<i class="large material-icons">mode_edit</i>
+    	</${1:button}>
+    	<ul>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">insert_chart</i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">format_quote</i></${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">publish</i>
+    		</${1:button}></li>
+    		<li><${1:button} ${2:type="button"} class="btn-floating ${3:red}"><i class="material-icons">attach_file</i></${1:button}></li>
+    	</ul>
+    </div>
+    """
+  'Materialize flat button old':
+    'prefix': 'm-button:flat-o'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect waves-teal btn-flat">${3:<i class="mdi-content-add"></i>}</${1:button}>'
+  'Materialize flat button':
+    'prefix': 'm-button:flat'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect waves-teal btn-flat">${3:<i class="material-icons">{4:add}</i>}</${1:button}>'
+  'Materialize floating button old':
+    'prefix': 'm-button:floating-o'
+    'body': '<${1:button} ${2:type="button"} class="btn-floating btn-large waves-effect waves-light ${3:red}"><i class="mdi-content-add"></i></${1:button}>'
+  'Materialize floating button':
+    'prefix': 'm-button:floating'
+    'body': '<${1:button} ${2:type="button"} class="btn-floating btn-large waves-effect waves-light ${3:red}"><i class="material-icons">add</i></${1:button}>'
+  'Materialize content icon old':
+    'prefix': 'm-icon:content'
+    'body': '<i class="mdi-content-${1:}"></i>'
+  'Materialize large button old':
+    'prefix': 'm-lg-button-o'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect waves-light btn-large">${3:<i class="mdi-file-cloud ${4:right}"></i>}</${1:button}>'
+  'Materialize large button':
+    'prefix': 'm-lg-button'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect waves-light btn-large">${3:<i class="material-icons ${4:right}">${5:cloud}</i>}</${1:button}>'
+  'Materialize raised button old with icon':
+    'prefix': 'm-raised-button:icon-o'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect ${3:waves-light} btn">${4:<i class="mdi-file-cloud ${5:left}"></i>}${6:button}</${1:button}>'
+  'Materialize raised button with icon':
+    'prefix': 'm-raised-button:icon'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect ${3:waves-light} btn">${4:<i class="material-icons ${5:left}">cloud</i>}${6:button}</${1:button}>'
+  'Materialize raised button without icon':
+    'prefix': 'm-raised-button'
+    'body': '<${1:button} ${2:type="button"} class="waves-effect ${3:waves-light} btn">${4:button}</${1:button}>'
+  'Materialize submit button old':
+    'prefix': 'm-submit-button-o'
+    'body': '<${1:button} ${2:type="button"} class="btn waves-effect waves-light">${3:<i class="mdi-content-send ${4:right}"></i>}</${1:button}>'
+  'Materialize submit button':
+    'prefix': 'm-submit-button'
+    'body': '<${1:button} ${2:type="button"} class="btn waves-effect waves-light">${3:<i class="material-icons ${4:right}">send</i>}</${1:button}>'
+  'Materialize basic card':
+    'prefix': 'm-card'
+    'body': """
+      <div class="row">
+    	<div class="col s12 m6">
+    		<div class="card blue-grey darken-1">
+    			<div class="card-content white-text">
+    				<span class="card-title">${1:Card Title}</span>
+    				<p>${2:I am a very simple card. I am good at containing small bits of information.
+    				I am convenient because I require little markup to use effectively.}</p>
+    			</div>
+    			<div class="card-action">
+    				<a href="#">${3:This is a link}</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    """
+  'Materialize image card':
+    'prefix': 'm-image-card'
+    'body': """
+      <div class="row">
+    	<div class="col s12 m7">
+    		<div class="card">
+    			<div class="card-image">
+    				<img src="${1:images/sample-1.jpg}">
+    				<span class="card-title">${2:Card Title}</span>
+    			</div>
+    			<div class="card-content">
+    				<p>${3:I am a very simple card. I am good at containing small bits of information.
+    				I am convenient because I require little markup to use effectively.}</p>
+    			</div>
+    			<div class="card-action">
+    				<a href="#">${4:This is a link}</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    """
+  'Materialize basic large card':
+    'prefix': 'm-card:lg'
+    'body': """
+      <div class="row">
+    	<div class="col s12 m6">
+    		<div class="card large blue-grey darken-1">
+    			<div class="card-content white-text">
+    				<span class="card-title">${1:Card Title}</span>
+    				<p>${2:I am a very simple card. I am good at containing small bits of information.
+    					I am convenient because I require little markup to use effectively.}</p>
+    			</div>
+    			<div class="card-action">
+    				<a href="#">${3:This is a link}</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    """
+  'Materialize revile large card':
+    'prefix': 'm-revile-card:lg'
+    'body': """
+      <div class="card large">
+      	<div class="card-image waves-effect waves-block waves-light">
+      		<img class="activator" src="${1:images/office.jpg}">
+      	</div>
+      	<div class="card-content">
+      		<span class="card-title activator grey-text text-darken-4">${2:Card Title}<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">${3:This is a link}</a></p>
+      	</div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">${2:Card Title} <i class="material-icons right">close</i></span>
+      		<p>${4:Here is some more information about this product that is only revealed once clicked on.}</p>
+      	</div>
+      </div>
+      """
+  'Materialize basic medium card':
+    'prefix': 'm-card:md'
+    'body': """
+       <div class="row">
+      	<div class="col 1:s12 m6">
+      		<div class="card medium blue-grey darken-1">
+      			<div class="card-content white-text">
+      				<span class="card-title">${1:Card Title}</span>
+      				<p>${2:I am a very simple card. I am good at containing small bits of information.
+      					I am convenient because I require little markup to use effectively.}</p>
+      			</div>
+      			<div class="card-action">
+      				<a href="#">${3:This is a link}</a>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      """
+  'Materialize revile medium card':
+    'prefix': 'm-revile-card:md'
+    'body': """
+      <div class="card medium">
+      	<div class="card-image waves-effect waves-block waves-light">
+      		<img class="activator" src="${1:images/office.jpg}">
+      	</div>
+      	<div class="card-content">
+      		<span class="card-title activator grey-text text-darken-4">${2:Card Title}<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">${3:This is a link}</a></p>
+      	</div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">${2:Card Title} <i class="material-icons right">cose</i></span>
+      		<p>${4:Here is some more information about this product that is only revealed once clicked on.}</p>
+      	</div>
+      </div>
+      """
+  'Materialize panel card':
+    'prefix': 'm-panel-card'
+    'body': """
+      <div class="row">
+      	<div class="col s12 m5">
+      		<div class="card-panel teal">
+      			<span class="white-text">${1:I am a very simple card. I am good at containing small bits of information.
+      				I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.}
+      			</span>
+      		</div>
+      	</div>
+      </div>
+      """
+  'Materialize revile card':
+    'prefix': 'm-revile-card'
+    'body': """
+      <div class="card">
+      	<div class="card-image waves-effect waves-block waves-light">
+      		<img class="activator" src="${1:images/office.jpg}">
+      	</div>
+      	<div class="card-content">
+      		<span class="card-title activator grey-text text-darken-4">${2:Card Title}<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">${3:This is a link}</a></p>
+      	</div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">${2:Card Title} <i class="material-icons right"close></i></span>
+      		<p>${4:Here is some more information about this product that is only revealed once clicked on.}</p>
+      	</div>
+      </div>
+      """
+  'Materialize basic small card':
+    'prefix': 'm-card:sm'
+    'body': """
+      <div class="row">
+      	<div class="col s12 m6">
+      		<div class="card small blue-grey darken-1">
+      			<div class="card-content white-text">
+      				<span class="card-title">${1:Card Title}</span>
+      				<p>${2:I am a very simple card. I am good at containing small bits of information.
+      					I am convenient because I require little markup to use effectively.}</p>
+      			</div>
+      			<div class="card-action">
+      				<a href="#">${3:This is a link}</a>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      """
+  'Materialize revile small card':
+    'prefix': 'm-revile-card:sm'
+    'body': """
+      <div class="card small">
+      	<div class="card-image waves-effect waves-block waves-light">
+      		<img class="activator" src="${1:images/office.jpg}">
+      	</div>
+      	<div class="card-content">
+      		<span class="card-title activator grey-text text-darken-4">${2:Card Title}<i class="material-icons right">more_vert</i></span>
+      		<p><a href="#">${3:This is a link}</a></p>
+      	</div>
+      	<div class="card-reveal">
+      		<span class="card-title grey-text text-darken-4">${2:Card Title} <i class="material-icons right">close</i></span>
+      		<p>${4:Here is some more information about this product that is only revealed once clicked on.}</p>
+      	</div>
+      </div>
+      """
+  'Materialize chip for contacts with optional close':
+    'prefix': 'm-chip:contact'
+    'body': """
+      <div class="chip">
+        <img src="${1:images/yuna.jpg}" alt="${2:Contact Person}">
+        Jane Doe ${3:<i class="material-icons">close</i>}
+      </div>
+      """
+  'Materialize chip for tags':
+    'prefix': 'm-chip:tag'
+    'body': """
+      <div class="chip">
+        ${1:Tag} ${2:<i class="material-icons">close</i>}
+      </div>
+      """
+  'Materialize multiple select collapsible':
+    'prefix': 'm-collapsible:expandable'
+    'body': """
+      <ul class="collapsible" data-collapsible="expandable">
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      </ul>
+      """
+  'Materialize single select popout collapsible':
+    'prefix': 'm-collapsible:popout'
+    'body': """
+      <ul class="collapsible popout" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+      </ul>
+      """
+  'Materialize default active':
+    'prefix': 'm-collapsible:selected'
+    'body': """
+      <ul class="collapsible" data-collapsible="accordion">
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      	<li>
+      		<div class="collapsible-header active"><i class="material-icons"></i>Second</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons"></i>Third</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      </ul>
+      """
+  'Materialize single select collapsible':
+    'prefix': 'm-collapsible'
+    'body': """
+      <ul class="collapsible" data-collapsible="accordion">
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      	<li>
+      		<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      	</li>
+      </ul>
+      """
+  'Materialize collection with avatar':
+    'prefix': 'm-collection:avatar'
+    'body': """
+      <ul class="collection">
+      	<li class="collection-item avatar">
+      		<img src="${1:images/yuna.jpg}" alt="" class="circle">
+      		<span class="title">${2:Title}</span>
+      		<p>${3:First Line} <br>
+      			${4:Second Line}
+      		</p>
+      		<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      	</li>
+      	<li class="collection-item avatar">
+      		<i class="mdi-file-folder circle"></i>
+      		<span class="title">${5:Title}</span>
+      		<p>${6:First Line} <br>
+      			${7:Second Line}
+      		</p>
+      		<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      	</li>
+      </ul>
+      """
+  'Materialize basic collection':
+    'prefix': 'm-collection'
+    'body': """
+      <ul class="collection ${1:with-header}">
+      	<li class="collection-item">${2: <h4>Alvin</h4>}</li>
+      	<li class="collection-item">${3:Alvin}</li>
+      	<li class="collection-item">${4:Alvin}</li>
+      	<li class="collection-item">${5:Alvin}</li>
+      </ul>
+      """
+  'Materialize swipe-to-dismiss collection':
+    'prefix': 'm-collection:dismiss'
+    'body': """
+      <ul class="collection">
+      	<li class="collection-item dismissable"><div>${1:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      	<li class="collection-item dismissable"><div>${2:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      	<li class="collection-item dismissable"><div>${3:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      	<li class="collection-item dismissable"><div>${4:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      </ul>
+      """
+  'Materialize collection with links':
+    'prefix': 'm-collection:sec'
+    'body': """
+      <ul class="collection with-header">
+      	<li class="collection-header"><h4>${1:First Names}</h4></li>
+      	<li class="collection-item"><div>${2:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      	<li class="collection-item"><div>${3:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      	<li class="collection-item"><div>${4:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      	<li class="collection-item"><div>${5:Alvin}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      </ul>
+      """
+  'Materialize toast with action':
+    'prefix': 'm-toast:action'
+    'body': """
+      <${1:a} class="waves-effect waves-light btn" onclick="toast('${2:<span>Item Deleted</span>}${3:<a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>}', 5000)">${0:Toast!}</${1:a}>
+      """
+  'Materialize toast':
+    'prefix': 'm-toast'
+    'body': """
+      <${1:a} class="btn" onclick="${2:toast(${3:'I am a toast'}, ${4:4000})}">${0:Toast!}</${1:a}>
+      """
+  'Materialize tool tip':
+    'prefix': 'm-tooltip'
+    'body': """<!-- data-position can be : bottom, top, left, or right -->
+      <!-- add \$('.tooltipped').tooltip({delay: 50}); to document ready -->
+      <!-- data-delay controls delay before tooltip shows (in milliseconds)-->
+      <${1:a} class="btn tooltipped" data-position="${2:bottom}" data-delay="${3:50}" data-tooltip="${4:I am tooltip}">${0:Hover me!}</${1:a}>
+      """
+  'Materialize dropdown with hover effect':
+    'prefix': 'm-dropdown:hover'
+    'body': """
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-button btn'  data-beloworigin="true" href='#' data-activates='${1:dropdown1}'>Drop Me!</a>
+
+      <!-- Dropdown Structure -->
+      <ul id='${1:dropdown1}' class='dropdown-content'>
+      	<li><a href="#!">${2:one}</a></li>
+      	<li><a href="#!">${3:two}</a></li>
+      	<li class="divider"></li>
+      	<li><a href="#!">${4:three}</a></li>
+      </ul>
+      """
+  'Materialize dropdown':
+    'prefix': 'm-dropdown'
+    'body': """
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-button btn' href='#' data-activates='${1:dropdown1}'>Drop Me!</a>
+
+      <!-- Dropdown Structure -->
+      <ul id='${1:dropdown1}' class='dropdown-content'>
+      	<li><a href="#!">${2:one}</a></li>
+      	<li><a href="#!">${3:two}</a></li>
+      	<li class="divider"></li>
+      	<li><a href="#!">${4:three}</a></li>
+      </ul>
+      """
+  'Materialize footer':
+    'prefix': 'm-footer'
+    'body': """
+      <footer class="page-footer">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col l6 s12">
+      				<h5 class="white-text">${1:Footer Content}</h5>
+      				<p class="grey-text text-lighten-4">${2:You can use rows and columns here to organize your footer content.}</p>
+      			</div>
+      			<div class="col l4 offset-l2 s12">
+      				<h5 class="white-text">${3:Links}</h5>
+      				<ul>
+      					<li><a class="grey-text text-lighten-3" href="#!">${4:Link} 1</a></li>
+      					<li><a class="grey-text text-lighten-3" href="#!">${5:Link} 2</a></li>
+      					<li><a class="grey-text text-lighten-3" href="#!">${6:Link} 3</a></li>
+      					<li><a class="grey-text text-lighten-3" href="#!">${7:Link} 4</a></li>
+      				</ul>
+      			</div>
+      		</div>
+      	</div>
+      	<div class="footer-copyright">
+      		<div class="container">
+      			© 2015 Copyright ${8:Text}
+      			<a class="grey-text text-lighten-4 right" href="#!">${9:More Links}</a>
+      		</div>
+      	</div>
+      </footer>
+      """
+  'Materialize form':
+    'prefix': 'm-form'
+    'body': """
+      <form action="${1}" method="${2:POST}">
+      	<legend>${3:Form title}</legend>
+      	<div class="input-field">
+      		<div class="form-group">
+      			<label class="control-label" for="${4:}">${5:label}</label>
+      			<span class="help-block"></span>
+      			<input type="text" class="form-control" id="" placeholder="Input field">
+      		</div>
+      	</div>
+      	${0}
+      	<button type="submit" class="btn">${5:Submit}</button>
+      </form>
+      """
