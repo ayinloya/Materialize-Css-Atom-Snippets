@@ -1,7 +1,7 @@
 {
   "name": "materialize-css",
   "main": "./lib/materialize-css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This Materialize sublime plugin contains snippets of Materialize CSS components. Hope it improves your workflow. :)",
   "keywords": [
     "Material",
@@ -18,6 +18,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
