@@ -302,6 +302,24 @@
       	</div>
       </div>
       """
+  'Materialize css cdn':
+    'prefix': 'm-cdn:css'
+    'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">'
+  'Google fonts cdn':
+    'prefix': 'm-cdn:google-icons'
+    'body': '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">'
+  'Materialize js cdn':
+    'prefix': 'm-cdn:js'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>'
+  'Materialize css and js cdn':
+    'prefix': 'm-cdn'
+    'body': """
+      <!-- Compiled and minified CSS -->
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
+
+      <!-- Compiled and minified JavaScript -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+      """
   'Materialize chip for contacts with optional close':
     'prefix': 'm-chip:contact'
     'body': """
@@ -531,4 +549,287 @@
       	${0}
       	<button type="submit" class="btn">${5:Submit}</button>
       </form>
+      """
+  'Materialize checkbox filled in':
+    'prefix': 'm-input:checkbox-fill'
+    'body': """
+      <p>
+        <input type="checkbox" class="filled-in" id="${1:filled-in-box}" ${2:checked="checked"} />
+        <label for="${1:filled-in-box}">${3:Filled in}</label>
+      </p>
+      """
+  'Materialize checkbox':
+    'prefix': 'm-input:checkbox'
+    'body': """
+      <p>
+      	<input type="checkbox" id="${1:test5}" />
+      	<label for="${1:test5}">${2:Red}</label>
+      </p>
+      """
+  'Materialize custom input error and success messages':
+    'prefix': 'm-input:message'
+    'body': """
+      <div class="input-field col ${5:s${6:12}}">
+        <input id="${2:email}" type="${1:email}" class="validate">
+        <label for="${2:email}" data-error="wrong" data-success="right">${4:Email}</label>
+      </div>${7}
+      """
+  'Materialize datepicker':
+    'prefix': 'm-input:date'
+    'body': """
+      <input type="date" class="datepicker">
+
+      <!-- remember to initialize datepicker -->
+      \$('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+        """
+  'Materialize file input':
+    'prefix': 'm-input:file'
+    'body': """
+      <div class="file-field input-field">
+        <div class="btn">
+        	<span>${1:File}</span>
+          <input type="file" ${2:multiple}>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" ${3:placeholder="${4:Upload one or more files}"}>
+        </div>
+      </div>
+      """
+  'Materialize radio button with gap':
+    'prefix': 'm-input:radio-gap'
+    'body': """
+      <p>
+      	<input ${1:class="with-gap"} name="${2:group1}" type="radio" id="${3:test1}" />
+      	<label for="${3:test1}">${4:Label}</label>
+      </p>
+      """
+  'Materialize radio button group':
+    'prefix': 'm-input:radio-group'
+    'body': """
+      <p>
+        <input name="${1:group1}" type="radio" id="${2:test1}" />
+        <label for="${2:test1}">${3:Red}</label>
+      </p>
+      <p>
+        <input name="${1:group1}" type="radio" id="${4:test2}" />
+        <label for="${4:test2}">${5:Yellow}</label>
+      </p>
+      """
+  'Materialize radio button':
+    'prefix': 'm-input:radio'
+    'body': """
+      <p>
+      	<input name="${1:group1}" type="radio" id="${2:test1}" />
+      	<label for="${2:test1}">${3:Label}</label>
+      </p>
+      """
+  'Materialize range':
+    'prefix': 'm-input:range'
+    'body': """
+      <p class="range-field">
+      	<input type="range" id="${1:test5}" min="${2:0}" max="${3:100}" />
+      </p>
+      """
+  'Materialize default browser disabled select button':
+    'prefix': 'm-input:select-default-disabled'
+    'body': """
+      <label>Browser Select</label>
+      <select class="browser-default" disabled>
+        <option value="" disabled selected>${1:Choose your option}</option>
+        <option value="${2:1}">${3:Option 1}</option>
+        <option value="${4:2}">${5:Option 2}</option>
+      </select>
+      """
+  'Materialize default browser select button':
+    'prefix': 'm-input:select-default'
+    'body': """
+      <label>Browser Select</label>
+      <select class="browser-default">
+        <option value="" disabled selected>${1:Choose your option}</option>
+        <option value="${2:1}">${3:Option 1}</option>
+        <option value="${4:2}">${5:Option 2}</option>
+      </select>
+      """
+  'Materialize disabled select button':
+    'prefix': 'm-input:select-disabled'
+    'body': """
+      ${1:<!-- add \$('select').material_select(); to document.ready -->}
+      <div class="input-field col s12">
+        <select ${2:class="browser-default"} disabled>
+          <option value="" disabled selected>${3:Choose your option}</option>
+          <option value="${4:1}">${5:Option 1}</option>
+          <option value="${6:2}">${7:Option 2}</option>
+          <option value="${8:3}">${9:Option 3}</option>
+        </select>
+        <label>${10:Materialize Disabled}</label>
+      </div>
+      """
+  'Materialize Group Select button':
+    'prefix': 'm-input:select-group'
+    'body': """
+      <div class="input-field col s12">
+        <select ${1:multiple}>
+          <optgroup label="${2:team 1}">
+            <option value="${3:1}">${4:Option 1}</option>
+            <option value="${5:2}">${6:Option 2}</option>
+          </optgroup>
+          <optgroup label="${7:team 2}">
+            <option value="${8:1}">${9:Option 3}</option>
+            <option value="${10:2}">${11:Option 4}</option>
+          </optgroup>
+        </select>
+        <label>${12:Optgroups}</label>
+      </div>
+      """
+  'Materialize select button with left image icons':
+    'prefix': 'm-input:select-icon-left'
+    'body': """
+      <div class="input-field col s12 m6">
+        <select class="icons">
+          <option value="" disabled selected>${1:Choose your option}</option>
+          <option value="" data-icon="${2:images/sample-1.jpg}" class="left circle">${3:example 1}</option>
+          <option value="" data-icon="${4:images/office.jpg}" class="left circle">${5:example 2}</option>
+          <option value="" data-icon="${6:images/yuna.jpg}" class="left circle">${7:example 1}</option>
+        </select>
+        <label>${8:Images in select}</label>
+      </div>
+      """
+  'Materialize select button with right image icons':
+    'prefix': 'm-input:select-icon-right'
+    'body': """
+      <div class="input-field col s12 m6">
+        <select class="icons">
+          <option value="" disabled selected>${1:Choose your option}</option>
+          <option value="" data-icon="${2:images/sample-1.jpg}" class="circle">${3:example 1}</option>
+          <option value="" data-icon="${4:images/office.jpg}" class="circle">${5:example 2}</option>
+          <option value="" data-icon="${6:images/yuna.jpg}" class="circle">${7:example 1}</option>
+        </select>
+        <label>${8:Images in select}</label>
+      </div>
+      """
+  'Materialize Multiple Select button':
+    'prefix': 'm-input:select-multiple'
+    'body': """
+      <div class="input-field col s12">
+        <select multiple>
+          <option value="" disabled selected>${1:Choose your option}</option>
+          <option value="${2:1}">${3:Option 1}</option>
+          <option value="${4:2}">${5:Option 2}</option>
+          <option value="${6:3}">${7:Option 3}</option>
+          </select>
+          <label>${8:Materialize Select}</label>
+      </div>
+      """
+  'Materialize select button':
+    'prefix': 'm-input:select'
+    'body': """
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>${1:Choose your option}</option>
+          <option value="${2:1}">${3:Option 1}</option>
+          <option value="${4:2}">${5:Option 2}</option>
+          <option value="${6:3}">${7:Option 3}</option>
+          </select>
+          <label>${8:Materialize Select}</label>
+      </div>
+      """
+  'Materialize disabled switch':
+    'prefix': 'm-input:switch-disabled'
+    'body': """
+      <!-- Switch -->
+      <div class="switch">
+      	<label>
+      		${1:Off}
+      		<input disabled type="checkbox">
+      			<span class="lever"></span>
+      			${2:On}
+      	</label>
+      </div>
+      """
+  'Materialize switch':
+    'prefix': 'm-input:switch'
+    'body': """
+      <!-- Switch -->
+      <div class="switch">
+      	<label>
+      		${1:Off}
+      		<input type="checkbox">
+      			<span class="lever"></span>
+      			${2:On}
+      	</label>
+      </div>
+      """
+  'Materialize text input with icon':
+    'prefix': 'm-input:text-icon'
+    'body': """
+      <div class="input-field col s6">
+      	<i class="material-icons prefix">account_circle</>
+      	<input id="${2:icon_prefix}" type="text" class="validate">
+      	<label for="${2:icon_prefix}">${1:First Name}</label>
+      </div>
+      """
+  'Materialize text input':
+    'prefix': 'm-input:text'
+    'body': """
+      <div class="input-field col s6">
+      	<input id="${2:icon_prefix}" type="text" class="validate">
+      	<label for="${2:icon_prefix}">${1:First Name}</label>
+      </div>
+      """
+  'Materialize textarea with icon':
+    'prefix': 'm-input:textarea-icon'
+    'body': """
+      <div class="input-field col s6">
+      	<i class="material-icons prefix">mode_edi</i>
+      	<textarea id="${1:icon_prefix2}" class="${2:materialize-textarea}"></textarea>
+      	<label for="${1:icon_prefix2}">${0:First Name}</label>
+      </div>
+      """
+  'Materialize textarea':
+    'prefix': 'm-input:textarea'
+    'body': """
+      <div class="input-field col s12">
+      	<textarea id="${1:textarea1}" class="${2:materialize-textarea}"></textarea>
+      	<label for="${1:textarea1}">${0:Textarea}</label>
+      </div>
+      """
+  'Materialize registration form':
+    'prefix': 'm-form:register'
+    'body': """
+      <div class="row">
+      	<form class="col s12">
+      		<div class="row">
+      			<div class="input-field col s6">
+      				<input id="${1:first_name}" type="text" class="validate">
+      					<label for="${1:first_name}">${1:First Name}</label>
+      			</div>
+      			<div class="input-field col s6">
+      				<input id="${2:last_name}" type="text" class="validate">
+      				<label for="${2:last_name}">${2:Last Name}</label>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="input-field col s12">
+      				<input id="${3:username}" type="text" class="validate">
+      				<label for="${3:username}">${3:Username}</label>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="input-field col s12">
+      				<input id="${4:password}" type="password" class="validate">
+      				<label for="${4:password}">${4:Password}</label>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="input-field col s12">
+      				<input id="email" type="email" class="validate">
+      				<label for="email">Email</label>
+      			</div>
+      		</div>
+      		<${5:button} ${6:type="button"} class="btn waves-effect waves-light">${7:<i class="material-icons ${8:right}">send</i>}</${5:button}>
+      	</form>
+      </div>
       """

@@ -1,14 +1,14 @@
 {
   "name": "materialize-css",
   "main": "./lib/materialize-css",
-  "version": "0.2.0",
-  "description": "This Materialize sublime plugin contains snippets of Materialize CSS components. Hope it improves your workflow. :)",
+  "version": "0.0.0",
+  "description": "Snippets of Materialize CSS components. Hope it improves your workflow. :)",
   "keywords": [
     "Material",
     "Materialize",
     "Snippets",
     "Auto Complete",
-    "Materialize Css"
+    "Materialize CSS"
   ],
   "activationCommands": {
     "atom-workspace": "materialize-css:toggle"
