@@ -118,7 +118,7 @@ Press tab after typing the following snippet codes
 | Component                 | Snippet code                   |
 |---------------------------| :-----------------------------:|
 | Badge                     | m-badge                        |
-| Old badge                 | m-badge-o                      |
+
 
 ### Buttons
 
@@ -188,7 +188,7 @@ Press tab after typing the following snippet codes
 | Footer                    | m-footer                       |
 | Sticky footer             | m-sticky-footer:css            |
 
-*Sticky footer contains CSS code for implementing a sticky footer.
+*Sticky footer contains CSS code for implementing a sticky footer.*
 
 
 ### Grid
@@ -216,9 +216,9 @@ Press tab after typing the following snippet codes
 | Component                 | Snippet code                   |
 |---------------------------| :-----------------------------:|
 | Align                      | m-align                         |
-| Align Righ                     | m-right-align                         |
-| Align Left                      | m-left-align                         |
-| Align Center                     | m-center-align                         |
+| Align Right                     | m-align:right                         |
+| Align Left                      | m-align:left                         |
+| Align Center                     | m-align:center                         |
 | Align Vertical                     | m-valign                         |
 | Vertical Align Wrapper                     | m-valign-wrapper                         |
 | Float Right                      | m-right                         |
@@ -249,7 +249,7 @@ Press tab after typing the following snippet codes
 | Pushpin                   |   m-pushpin                    |
 | Navbar-slideout-js        |   m-navbar:slideout-js         |
 
-*Remember to precede Navbar-slideout-js with the "$" sign
+*Remember to precede Navbar-slideout-js with the "$" sign*
 
 ### Media
 
@@ -342,10 +342,10 @@ Press tab after typing the following snippet codes
 ##### for tags and contacts
 | Component                 	 | Snippet code                  |
 |------------------------------| :----------------------------:|
-| Contacts chip		             | m-breadcrumps                 |
-| Tags chip               	   | m-breadcrumps                 |
+| Contacts chip		             | m-chip:contact                 |
+| Tags chip               	   | m-chip:tag                 |
 
 # Very Important
-
-When using the Materialize CSS versions below release v0.97.0, append ``-o``
+Most content for v0.97.0 are no longer available
+For material v0.97.0 and below, append ``-o``
     eg. ``m-lg-button-o`` will produce the old icon implementation ``<button type="button" class="waves-effect waves-light btn-large"><i class="mdi-file-cloud right"></i></button>``.

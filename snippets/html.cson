@@ -833,3 +833,1116 @@
       	</form>
       </div>
       """
+  'Materialize column 1':
+    'prefix': 'm-col:1'
+    'body': """
+      <div class="col s1 m1 l1">
+      	${0}
+      </div>
+      """
+  'Materialize column 10':
+    'prefix': 'm-col:10'
+    'body': """
+      <div class="col s10 m10 l10">
+      	${0}
+      </div>
+      """
+  'Materialize column 11':
+    'prefix': 'm-col:11'
+    'body': """
+      <div class="col s11 m11 l11">
+      	${0}
+      </div>
+      """
+  'Materialize column 12':
+    'prefix': 'm-col:12'
+    'body': """
+      <div class="col s12 m12 l12">
+      	${0}
+      </div>
+      """
+  'Materialize column 2':
+    'prefix': 'm-col:2'
+    'body': """
+      <div class="col s2 m2 l2">
+      	${0}
+      </div>
+      """
+  'Materialize column 3':
+    'prefix': 'm-col:3'
+    'body': """
+      <div class="col s3 m3 l3">
+      	${0}
+      </div>
+      """
+  'Materialize column 4':
+    'prefix': 'm-col:4'
+    'body': """
+      <div class="col s4 m4 l4">
+      	${0}
+      </div>
+      """
+  'Materialize column 5':
+    'prefix': 'm-col:5'
+    'body': """
+      <div class="col s5 m5 l5">
+      	${0}
+      </div>
+      """
+  'Materialize column 6':
+    'prefix': 'm-col:6'
+    'body': """
+      <div class="col s6 m6 l6">
+      	${0}
+      </div>
+      """
+  'Materialize column 7':
+    'prefix': 'm-col:7'
+    'body': """
+      <div class="col s7 m7 l7">
+      	${0}
+      </div>
+      """
+  'Materialize column 8':
+    'prefix': 'm-col:8'
+    'body': """
+      <div class="col s8 m8 l8">
+      	${0}
+      </div>
+      """
+  'Materialize column 9':
+    'prefix': 'm-col:9'
+    'body': """
+      <div class="col s9 m9 l9">
+      	${0}
+      </div>
+      """
+  'Materialize Promo row':
+    'prefix': 'm-col:promo'
+    'body': """
+      <div class="row">
+
+    	<div class="col s4">
+    		${1:<!-- Promo Content 1 goes here -->}
+    	</div>
+    	<div class="col s4">
+    		${2:<!-- Promo Content 2 goes here -->}
+    	</div>
+    	<div class="col s4">
+    		${3:<!-- Promo Content 3 goes here -->}
+    	</div>
+
+    </div>
+    """
+  'Materialize column':
+    'prefix': 'm-col'
+    'body': """
+      <div class="col s${1:6} m${2:6} l${3:6}">
+      	${4}
+      </div>
+      """
+  'Materialize align text center':
+    'prefix': 'm-align:center'
+    'body': '<${1:h5} class="center-align">${2}</${1:h5}>'
+  'Materialize align text left':
+    'prefix': 'm-align:left'
+    'body': '<${1:h5} class="left-align">${2}</${1:h5}>'
+  'Materialize align text right':
+    'prefix': 'm-align:right'
+    'body': '<${1:h5} class="right-align">${2}</${1:h5}>'
+  'Materialize align text':
+    'prefix': 'm-align'
+    'body': '<${2:h5} class="${1:center}-align">${3}</${2:h5}>'
+  'Materialize float left':
+    'prefix': 'm-left'
+    'body': '<${1:div} class="left">${2}</${1:div}>'
+  'Materialize float right':
+    'prefix': 'm-right'
+    'body': '<${1:div} class="right">${2}</${1:div}>'
+  'Materialize float':
+    'prefix': 'm-float'
+    'body': '<${1:div} class="${2:left}">${3}</${1:div}>'
+  'Materialize : Hidden for Desktop Only':
+    'prefix': 'm-hide:desktop'
+    'body': '<${1:div} class="hide-on-large-only">${2}</${1:div}>'
+  'Materialize: Hidden for Tablet and Below':
+    'prefix': 'm-hide:tablet-down'
+    'body': '<${1:div} class="hide-on-med-and-down">${2}</${1:div}>'
+  'Materialize css: Hidden for Tablet and Above':
+    'prefix': 'm-hide:tablet-up'
+    'body': '<${1:div} class="hide-on-med-and-up">${2}</${1:div}>'
+  'Materialize css: Hidden for Tablet Only':
+    'prefix': 'm-hide:tablet'
+    'body': '<${1:div} class="hide-on-med-only">${2}</${1:div}>'
+  'Materialize css: Hidden for Mobile Only':
+    'prefix': 'm-hide:mobile'
+    'body': '<${1:div} class="hide-on-small-only">${2}</${1:div}>'
+  'Materialize css: Hidden for all Devices':
+    'prefix': 'm-hide'
+    'body': '<${1:div} class="hide">${2}</${1:div}>'
+  'Materialize css: To truncate long lines of text in an ellipsis':
+    'prefix': 'm-truncate'
+    'body': '<${1:h4} class="truncate">${2}</${1:h4}>'
+  'Materialize align your content vertically with wrapper':
+    'prefix': 'm-valign:wrapper'
+    'body': """
+      <div class="valign-wrapper">
+        ${1:<${2:h5} class="valign">${3}</${2:h5}>}
+      </div>
+      """
+  'Materialize align your content vertically without wrapper':
+    'prefix': 'm-valign'
+    'body': '<${1:h5} class="valign">${2}</${1:h5}>'
+  'Materialize css: large material icons':
+    'prefix': 'm-icon:lg'
+    'body': '<i class="large material-icons">${1:}</i>'
+  'Materialize css: medium material icons':
+    'prefix': 'm-icon:md'
+    'body': '<i class="medium material-icons">${1:}</i>'
+  'Materialize css: small material icons':
+    'prefix': 'm-icon:sm'
+    'body': '<i class="small material-icons">${1:}</i>'
+  'Materialize css: tiny material icons':
+    'prefix': 'm-icon:tiny'
+    'body': '<i class="tiny material-icons">${1:}</i>'
+  'Materialize css: material icons':
+    'prefix': 'm-icon'
+    'body': '<i class="material-icons">${1:}</i>'
+  'Materialize css: responsive round image':
+    'prefix': 'm-image:circle'
+    'body': '<img class="circle responsive-img" src="${1:images/yuna.jpg}">'
+  'Materialize css: responsive image':
+    'prefix': 'm-image'
+    'body': '<img class="responsive-img" src="${1:cool_pic.jpg}">'
+  'Materialize css: Material box with caption':
+    'prefix': 'm-materialbox:caption'
+    'body': '<img class="materialboxed" data-caption="${1:A picture of some deer and tons of trees}" width="${2:650}" src="${3:images/sample-1.jpg}">'
+  'Materialize css: Material box':
+    'prefix': 'm-materialbox'
+    'body': '<img class="materialboxed" width="${1:650}" src="${0:images/sample-1.jpg}">'
+  'Materialize css: Material slider':
+    'prefix': 'm-slider'
+    'body': """
+      <div class="slider">
+      	<ul class="slides">
+      		<li>
+      			<img src="${7:http://lorempixel.com/580/250/nature/1}"> <!-- random image -->
+      			<div class="caption ${6:center}-align">
+      				<h3>${1:This is our big Tagline!}</h3>
+      				<h5 class="light grey-text text-lighten-3">${2:Here's our small slogan.}</h5>
+      			</div>
+      		</li>
+      		<li>
+      			<img src="${3:http://lorempixel.com/580/250/nature/2}"> <!-- random image -->
+      			<div class="caption ${6:left}-align">
+      				<h3>${4:Left Aligned Caption}</h3>
+      				<h5 class="light grey-text text-lighten-3">${5:Here's our small slogan.}</h5>
+      			</div>
+      		</li>
+      	</ul>
+      </div>
+      """
+  'Materialize css: responsive embeded videos':
+    'prefix': 'm-video:embed'
+    'body': """
+      <div class="video-container">
+        <iframe width="${1:853}" height="${2:480}" src="${3://www.youtube.com/embed/Q8TXgCzxEnw?rel=0}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      """
+  'Materialize css: responsive videos':
+    'prefix': 'm-video'
+    'body': """
+      <video class="responsive-video" controls>
+        <source src="${1:movie.mp4}" type="video/mp4">
+      </video>
+      """
+  'Materialize css: Material modal with fixed footer':
+    'prefix': 'm-modal:fixed-footer'
+    'body': """
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#${1:modal1}">Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="${1:modal1}" class="modal modal-fixed-footer">
+      	<div class="modal-content">
+      		<h4>${2:Modal Header}</h4>
+      		<p>${3:A bunch of text}</p>
+      	</div>
+      	<div class="modal-footer">
+      		<a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">${0:Agree}</a>
+      	</div>
+      </div>
+      """
+  'Materialize css: Material modal':
+    'prefix': 'm-modal'
+    'body': """
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#${1:modal1}">Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="${1:modal1}" class="modal">
+      	<div class="modal-content">
+      		<h4>${2:Modal Header}</h4>
+      		<p>${3:A bunch of text}</p>
+      	</div>
+      	<div class="modal-footer">
+      		<a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">${0:Agree}</a>
+      	</div>
+      </div>
+      """
+  'Materialize css: navbar center':
+    'prefix': 'm-navbar:center'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#" class="brand-logo center">Logo</a>
+      		<ul id="nav-mobile" class="left hide-on-med-and-down">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<li><a href="javascript.html">JavaScript</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar collapse':
+    'prefix': 'm-navbar:collapse'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#!" class="brand-logo">${1:Logo}</a>
+      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      		<ul class="right hide-on-med-and-down">
+      			<li><a href="sass.html">${2:Sass}</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<li><a href="javascript.html">Javascript</a></li>
+      			<li><a href="mobile.html">Mobile</a></li>
+      		</ul>
+      		<ul class="side-nav" id="mobile-demo">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<li><a href="javascript.html">Javascript</a></li>
+      			<li><a href="mobile.html">Mobile</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar fixed':
+    'prefix': 'm-navbar:fixed'
+    'body': """
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+      	<li><a href="#!">one</a></li>
+      	<li><a href="#!">two</a></li>
+      	<li class="divider"></li>
+      	<li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+      	<div class="navbar-fixed">
+      		<a href="#!" class="brand-logo">Logo</a>
+      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      		<ul class="right hide-on-med-and-down">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<!-- Dropdown Trigger -->
+      			<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      		</ul>
+      		<ul class="side-nav" id="mobile-demo">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar with icon and text':
+    'prefix': 'm-navbar:icon-text'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#!" class="brand-logo">Logo</a>
+      		<ul class="right hide-on-med-and-down">
+      			<li><a href="sass.html"><i class="mdi-action-search left"></i>Link with Left Icon</a></li>
+      			<li><a href="components.html"><i class="mdi-action-view-module right"></i>Link with Right Icon</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar with icon':
+    'prefix': 'm-navbar:icon'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#!" class="brand-logo">Logo</a>
+      		<ul class="right hide-on-med-and-down">
+      			<li><a href="sass.html"><i class="mdi-action-search"></i></a></li>
+      			<li><a href="components.html"><i class="mdi-action-view-module"></i></a></li>
+      			<li><a href="javascript.html"><i class="mdi-navigation-refresh"></i></a></li>
+      			<li><a href="mobile.html"><i class="mdi-navigation-more-vert"></i></a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar with left float':
+    'prefix': 'm-navbar:left'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#" class="brand-logo right">Logo</a>
+      		<ul id="nav-mobile" class="left hide-on-med-and-down">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<li><a href="javascript.html">JavaScript</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar with right float':
+    'prefix': 'm-navbar:right'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#" class="brand-logo">Logo</a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<li><a href="javascript.html">JavaScript</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar with search':
+    'prefix': 'm-navbar:search'
+    'body': """
+      <nav>
+      	<div class="nav-wrapper">
+      		<form>
+      			<div class="input-field">
+      				<input id="search" type="text" required>
+      				<label for="search"><i class="material-icons">search</i></label>
+      			</div>
+      		</form>
+      	</div>
+      </nav>
+      """
+  'Materialize css: navbar with slideout dropdown':
+    'prefix': 'm-navbar:slideout-dropdown'
+    'body': """
+      <ul id="slide-out" class="side-nav">
+      	<li><a href="#!">First Sidebar Link</a></li>
+      	<li><a href="#!">Second Sidebar Link</a></li>
+      	<li class="no-padding">
+      		<ul class="collapsible collapsible-accordion">
+      			<li>
+      				<a class="collapsible-header">Dropdown<i class="mdi-navigation-arrow-drop-down"></i></a>
+      				<div class="collapsible-body">
+      					<ul>
+      						<li><a href="#!">First</a></li>
+      						<li><a href="#!">Second</a></li>
+      						<li><a href="#!">Third</a></li>
+      						<li><a href="#!">Fourth</a></li>
+      					</ul>
+      				</div>
+      			</li>
+      		</ul>
+      	</li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+      	<li><a href="#!">First Sidebar Link</a></li>
+      	<li><a href="#!">Second Sidebar Link</a></li>
+      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      	<ul id='dropdown1' class='dropdown-content'>
+      		<li><a href="#!">First</a></li>
+      		<li><a href="#!">Second</a></li>
+      		<li><a href="#!">Third</a></li>
+      		<li><a href="#!">Fourth</a></li>
+      	</ul>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      """
+  'Materialize css: fixed navbar with slideout':
+    'prefix': 'm-navbar:slideout-fixed'
+    'body': """
+      <ul id="slide-out" class="side-nav fixed">
+      	<li><a href="#!">${1:First Sidebar Link}</a></li>
+      	<li><a href="#!">${2:Second Sidebar Link}</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      """
+  'Materialize css: navbar with fullscree slideout':
+    'prefix': 'm-navbar:slideout-fullscreen'
+    'body': """
+      <ul id="slide-out" class="side-nav fixed">
+      	<li><a href="#!">${1:First Sidebar Link}</a></li>
+      	<li><a href="#!">${2:Second Sidebar Link}</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+      """
+  'Materialize css: navbar slideout ':
+    'prefix': 'm-navbar:slideout'
+    'body': """
+      <nav>
+      	<ul class="right hide-on-med-and-down">
+      		<li><a href="#!">${1:First Sidebar Link}</a></li>
+      		<li><a href="#!">${2:Second Sidebar Link}</a></li>
+      	</ul>
+      	<ul id="slide-out" class="side-nav">
+      		<li><a href="#!">${1:First Sidebar Link}</a></li>
+      		<li><a href="#!">${2:Second Sidebar Link}</a></li>
+      	</ul>
+      	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </nav>
+      """
+  'Materialize css: navbar':
+    'prefix': 'm-navbar'
+    'body': """
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+      	<li><a href="#!">one</a></li>
+      	<li><a href="#!">two</a></li>
+      	<li class="divider"></li>
+      	<li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+      	<div class="nav-wrapper">
+      		<a href="#!" class="brand-logo">Logo</a>
+      		<!-- activate side-bav in mobile view -->
+      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      		<ul class="right hide-on-med-and-down">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      			<!-- Dropdown Trigger -->
+      			<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      		</ul>
+      		<!-- navbar for mobile -->
+      		<ul class="side-nav" id="mobile-demo">
+      			<li><a href="sass.html">Sass</a></li>
+      			<li><a href="components.html">Components</a></li>
+      		</ul>
+      	</div>
+      </nav>
+      """
+  'Materialize basic pagination':
+    'prefix': 'm-pagination'
+    'body': """
+      <ul class="pagination">
+      	<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      	<li class="active"><a href="#!">1</a></li>
+      	<li class="waves-effect"><a href="#!">2</a></li>
+      	<li class="waves-effect"><a href="#!">3</a></li>
+      	<li class="waves-effect"><a href="#!">4</a></li>
+      	<li class="waves-effect"><a href="#!">5</a></li>
+      	<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+      """
+  'Materialize basic pagination':
+    'prefix': 'm-parallax'
+    'body': """
+      <div class="parallax-container">
+      	<div class="parallax"><img src="${1:images/parallax1.jpg}"></div>
+      </div>
+      """
+  'Materialize circular progress bar':
+    'prefix': 'm-progress-bar:circular'
+    'body': """
+      <div class="preloader-wrapper big active">
+      	<div class="spinner-layer spinner-${1:blue}-only">
+      		<div class="circle-clipper left">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="gap-patch">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="circle-clipper right">
+      			<div class="circle"></div>
+      		</div>
+      	</div>
+      </div>
+      """
+  'Materialize determinate progress bar':
+    'prefix': 'm-progress-bar:determinate'
+    'body': """
+      <div class="progress">
+      	<div class="determinate" style="width: 70%"></div>
+      </div>
+      """
+  'Materialize indeterminate progress bar':
+    'prefix': 'm-progress-bar:indeterminate'
+    'body': """
+      <div class="progress">
+      	<div class="indeterminate"></div>
+      </div>
+      """
+  'Materialize rainbow progress bar':
+    'prefix': 'm-progress-bar:rainbow'
+    'body': """
+      <div class="preloader-wrapper big active">
+      	<div class="spinner-layer spinner-blue">
+      		<div class="circle-clipper left">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="gap-patch">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="circle-clipper right">
+      			<div class="circle"></div>
+      		</div>
+      	</div>
+
+      	<div class="spinner-layer spinner-red">
+      		<div class="circle-clipper left">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="gap-patch">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="circle-clipper right">
+      			<div class="circle"></div>
+      		</div>
+      	</div>
+
+      	<div class="spinner-layer spinner-yellow">
+      		<div class="circle-clipper left">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="gap-patch">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="circle-clipper right">
+      			<div class="circle"></div>
+      		</div>
+      	</div>
+
+      	<div class="spinner-layer spinner-green">
+      		<div class="circle-clipper left">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="gap-patch">
+      			<div class="circle"></div>
+      		</div>
+      		<div class="circle-clipper right">
+      			<div class="circle"></div>
+      		</div>
+      	</div>
+      </div>
+      """
+  'Materialize css scrollspy':
+    'prefix': 'm-scrollspy'
+    'body': """
+      <div class="row">
+      	<div class="col s12 m9 l10">
+      		<div id="${1:introduction}" class="section scrollspy">
+      			<p>${2:Content} </p>
+      		</div>
+
+      		<div id="${3:structure}" class="section scrollspy">
+      			<p>${4:Content} </p>
+      		</div>
+
+      		<div id="${5:initialization}" class="section scrollspy">
+      			<p>${6:Content} </p>
+      		</div>
+      	</div>
+      	<div class="col hide-on-small-only m3 l2">
+      		<ul class="section table-of-contents">
+      			<li><a href="#${1:introduction}">${1:Introduction}</a></li>
+      			<li><a href="#${3:structure}">${3:Structure}</a></li>
+      			<li><a href="#${5:initialization}">${5:Intialization}</a></li>
+      		</ul>
+      	</div>
+      </div>
+      """
+  'Materialize css bordered table':
+    'prefix': 'm-table:bordered'
+    'body': """
+      <table class="bordered">
+      	<thead>
+      		<tr>
+      			<th data-field="${1:id}">${2:Name}</th>
+      			<th data-field="${3:name}">${4:Item Name}</th>
+      			<th data-field="${5:price}">${6:Item Price}</th>
+      		</tr>
+      	</thead>
+
+      	<tbody>
+      		<tr>
+      			<td>${7:Alvin}</td>
+      			<td>${8:Eclair}</td>
+      			<td>${9:$0.87}</td>
+      		</tr>
+      		<tr>
+      			<td>${10:Alan}</td>
+      			<td>${11:Jellybean}</td>
+      			<td>${12:$3.76}</td>
+      		</tr>
+      	</tbody>
+      </table>
+      """
+  'Materialize css centered table':
+    'prefix': 'm-table:centered'
+    'body': """
+      <table class="centered">
+      	<thead>
+      		<tr>
+      			<th data-field="${1:id}">${2:Name}</th>
+      			<th data-field="${3:name}">${4:Item Name}</th>
+      			<th data-field="${5:price}">${6:Item Price}</th>
+      		</tr>
+      	</thead>
+
+      	<tbody>
+      		<tr>
+      			<td>${7:Alvin}</td>
+      			<td>${8:Eclair}</td>
+      			<td>${9:$0.87}</td>
+      		</tr>
+      		<tr>
+      			<td>${10:Alan}</td>
+      			<td>${11:Jellybean}</td>
+      			<td>${12:$3.76}</td>
+      		</tr>
+      	</tbody>
+      </table>
+      """
+  'Materialize css hover table':
+    'prefix': 'm-table:hover'
+    'body': """
+      <table class="hoverable">
+      	<thead>
+      		<tr>
+      			<th data-field="${1:id}">${2:Name}</th>
+      			<th data-field="${3:name}">${4:Item Name}</th>
+      			<th data-field="${5:price}">${6:Item Price}</th>
+      		</tr>
+      	</thead>
+
+      	<tbody>
+      		<tr>
+      			<td>${7:Alvin}</td>
+      			<td>${8:Eclair}</td>
+      			<td>${9:$0.87}</td>
+      		</tr>
+      		<tr>
+      			<td>${10:Alan}</td>
+      			<td>${11:Jellybean}</td>
+      			<td>${12:$3.76}</td>
+      		</tr>
+      	</tbody>
+      </table>
+      """
+  'Materialize css responsive table':
+    'prefix': 'm-table:responsive'
+    'body': """
+      <table class="responsive-table">
+      	<thead>
+      		<tr>
+      			<th data-field="${1:id}">${2:Name}</th>
+      			<th data-field="${3:name}">${4:Item Name}</th>
+      			<th data-field="${5:price}">${6:Item Price}</th>
+      		</tr>
+      	</thead>
+
+      	<tbody>
+      		<tr>
+      			<td>${7:Alvin}</td>
+      			<td>${8:Eclair}</td>
+      			<td>${9:$0.87}</td>
+      		</tr>
+      		<tr>
+      			<td>${10:Alan}</td>
+      			<td>${11:Jellybean}</td>
+      			<td>${12:$3.76}</td>
+      		</tr>
+      	</tbody>
+      </table>
+      """
+  'Materialize css striped table':
+    'prefix': 'm-table:striped'
+    'body': """
+      <table class="striped">
+      	<thead>
+      		<tr>
+      			<th data-field="${1:id}">${2:Name}</th>
+      			<th data-field="${3:name}">${4:Item Name}</th>
+      			<th data-field="${5:price}">${6:Item Price}</th>
+      		</tr>
+      	</thead>
+
+      	<tbody>
+      		<tr>
+      			<td>${7:Alvin}</td>
+      			<td>${8:Eclair}</td>
+      			<td>${9:$0.87}</td>
+      		</tr>
+      		<tr>
+      			<td>${10:Alan}</td>
+      			<td>${11:Jellybean}</td>
+      			<td>${12:$3.76}</td>
+      		</tr>
+      	</tbody>
+      </table>
+      """
+  'Materialize css table':
+    'prefix': 'm-table'
+    'body': """
+      <table>
+      	<thead>
+      		<tr>
+      			<th data-field="${1:id}">${2:Name}</th>
+      			<th data-field="${3:name}">${4:Item Name}</th>
+      			<th data-field="${5:price}">${6:Item Price}</th>
+      		</tr>
+      	</thead>
+
+      	<tbody>
+      		<tr>
+      			<td>${7:Alvin}</td>
+      			<td>${8:Eclair}</td>
+      			<td>${9:$0.87}</td>
+      		</tr>
+      		<tr>
+      			<td>${10:Alan}</td>
+      			<td>${11:Jellybean}</td>
+      			<td>${12:$3.76}</td>
+      		</tr>
+      	</tbody>
+      </table>
+      """
+  'Materialize css tabs':
+    'prefix': 'm-tab'
+    'body': """
+      <div class="row">
+      	<div class="col s12">
+      		<ul class="tabs">
+      			<li class="tab col s3"><a ${9:class="active"} href="#${1:test1}">${2:Test 1}</a></li>
+      			<li class="tab col s3"><a class="active" href="#${3:test2}">${4:Test 2}</a></li>
+      			<li class="tab col s3"><a href="#${5:test3}">${6:Test 3}</a></li>
+      			<li class="tab col s3"><a href="#${7:test4}">${8:Test 4}</a></li>
+      		</ul>
+      	</div>
+      	<div id="${1:test1}" class="col s12">${2:Test 1}</div>
+      	<div id="${3:test2}" class="col s12">${4:Test 2}</div>
+      	<div id="${5:test3}" class="col s12">${6:Test 3}</div>
+      	<div id="${7:test4}" class="col s12">${8:Test 4}</div>
+      </div>
+      """
+  'Materialize css html5 basic template':
+    'prefix': 'm-template:html'
+    'body': """
+      <!DOCTYPE html>
+      <html>
+      	<head>
+      		<!--Import materialize.css-->
+      		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      		<!--Let browser know website is optimized for mobile-->
+      		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      	</head>
+
+      	<body>
+      		${1:content here}
+      		<!--Import jQuery before materialize.js-->
+      		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      		<script type="text/javascript" src="js/materialize.min.js"></script>
+      	</body>
+      </html>
+      """
+  'Materialize css html5 parallax template':
+    'prefix': 'm-template:parallax'
+    'body': """
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Parallax Template - Materialize</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      </head>
+      <body>
+        <nav class="white" role="navigation">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Navbar Link</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
+
+        <div id="index-banner" class="parallax-container">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <br><br>
+              <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+              <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+              </div>
+              <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+              </div>
+              <br><br>
+
+            </div>
+          </div>
+          <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+        </div>
+
+
+        <div class="container">
+          <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                  <h5 class="center">Speeds up development</h5>
+
+                  <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                </div>
+              </div>
+
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                  <h5 class="center">User Experience Focused</h5>
+
+                  <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                </div>
+              </div>
+
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                  <h5 class="center">Easy to work with</h5>
+
+                  <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="parallax-container valign-wrapper">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+        </div>
+
+        <div class="container">
+          <div class="section">
+
+            <div class="row">
+              <div class="col s12 center">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4>Contact Us</h4>
+                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="parallax-container valign-wrapper">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+              </div>
+            </div>
+          </div>
+          <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+        </div>
+
+        <footer class="page-footer teal">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+              </div>
+              <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                  <li><a class="white-text" href="#!">Link 1</a></li>
+                  <li><a class="white-text" href="#!">Link 2</a></li>
+                  <li><a class="white-text" href="#!">Link 3</a></li>
+                  <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+              <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                  <li><a class="white-text" href="#!">Link 1</a></li>
+                  <li><a class="white-text" href="#!">Link 2</a></li>
+                  <li><a class="white-text" href="#!">Link 3</a></li>
+                  <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+          </div>
+        </footer>
+
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../../dist/js/materialize.js"></script>
+        <script src="js/init.js"></script>
+
+        </body>
+      </html>
+      """
+  'Materialize css html5 starter template':
+    'prefix': 'm-template:starter'
+    'body': """
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Starter Template - Materialize</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      </head>
+      <body>
+        <nav class="light-blue lighten-1" role="navigation">
+          <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Navbar Link</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Starter Template</h1>
+            <div class="row center">
+              <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
+            <div class="row center">
+              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+            </div>
+            <br><br>
+
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+                  <h5 class="center">Speeds up development</h5>
+
+                  <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                </div>
+              </div>
+
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                  <h5 class="center">User Experience Focused</h5>
+
+                  <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                </div>
+              </div>
+
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                  <h5 class="center">Easy to work with</h5>
+
+                  <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+
+          <div class="section">
+
+          </div>
+        </div>
+
+        <footer class="page-footer orange">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+              </div>
+              <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                  <li><a class="white-text" href="#!">Link 1</a></li>
+                  <li><a class="white-text" href="#!">Link 2</a></li>
+                  <li><a class="white-text" href="#!">Link 3</a></li>
+                  <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+              <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                  <li><a class="white-text" href="#!">Link 1</a></li>
+                  <li><a class="white-text" href="#!">Link 2</a></li>
+                  <li><a class="white-text" href="#!">Link 3</a></li>
+                  <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+          </div>
+        </footer>
+
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../../bin/materialize.js"></script>
+        <script src="js/init.js"></script>
+
+        </body>
+      </html>
+      """
+  'Materialize css flow text':
+    'prefix': 'm-flow-text'
+    'body': '<p class="flow-text">${1:I am Flow Text}</p>'
