@@ -304,21 +304,21 @@
       """
   'Materialize css cdn':
     'prefix': 'm-cdn:css'
-    'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">'
+    'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">'
   'Google fonts cdn':
     'prefix': 'm-cdn:google-icons'
     'body': '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">'
   'Materialize js cdn':
     'prefix': 'm-cdn:js'
-    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>'
+    'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>'
   'Materialize css and js cdn':
     'prefix': 'm-cdn'
     'body': """
       <!-- Compiled and minified CSS -->
-      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css'>
 
       <!-- Compiled and minified JavaScript -->
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js'></script>
       """
   'Materialize chip for contacts with optional close':
     'prefix': 'm-chip:contact'
