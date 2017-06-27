@@ -1,7 +1,7 @@
 {
   "name": "materialize-css",
   "main": "./lib/materialize-css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Snippets of Materialize CSS components. Hope it improves your workflow. :)",
   "keywords": [
     "Material",
