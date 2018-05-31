@@ -1333,7 +1333,7 @@
       	<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
       </ul>
       """
-  'Materialize basic pagination':
+  'Materialize basic parallax':
     'prefix': 'm-parallax'
     'body': """
       <div class="parallax-container">
