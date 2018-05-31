@@ -92,6 +92,37 @@
     	</ul>
     </div>
     """
+  'Materialize fixed floating button with click to toggle':
+    'prefix': 'm-fixed-floating-button:click-toggle'
+        'body': """
+          <div class="fixed-action-btn ${1:horizontal} click-to-toggle">
+        	<${1:button} ${2:type="button"} class="btn-floating btn-large ${3:red}">
+        		<i class="large material-icons">mode_edit</i>
+        	</${1:button}>
+        	<ul>
+        		<li><${2:button} ${3:type="button"} class="btn-floating ${4:red}"><i class="material-icons">insert_chart</i></${2:button}></li>
+        		<li><${2:button} ${3:type="button"} class="btn-floating ${4:red}"><i class="material-icons">format_quote</i></${2:button}></li>
+        		<li><${2:button} ${3:type="button"} class="btn-floating ${4:red}"><i class="material-icons">publish</i>
+        		</${2:button}></li>
+        		<li><${2:button} ${3:type="button"} class="btn-floating ${4:red}"><i class="material-icons">attach_file</i></${2:button}></li>
+        	</ul>
+        </div>
+        """
+  'Materialize FAB to Toolbar':
+    'prefix': 'm-fixed-floating-button:toolbar'
+    'body': """
+      <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+          <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+          <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+          <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+      </div>
+      """
   'Materialize flat button old':
     'prefix': 'm-button:flat-o'
     'body': '<${1:button} ${2:type="button"} class="waves-effect waves-teal btn-flat">${3:<i class="mdi-content-add"></i>}</${1:button}>'
@@ -185,6 +216,76 @@
     	</div>
     </div>
     """
+  'Materialize card with FAB':
+    'prefix': 'm-card:fab'
+    'body': """
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="${1:images/sample-1.jpg}">
+              <span class="card-title">${2:Card Title}</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              ${3:<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>}
+            </div>
+          </div>
+        </div>
+      </div>
+      """
+  'Materialize horizontal card':
+    'prefix': 'm-card:horizontal'
+    'body': """
+      <div class="col s12 m7">
+        <h2 class="header">${1:Horizontal Card}</h2>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="${2:https://lorempixel.com/100/190/nature/6}">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              ${3:<p>I am a very simple card. I am good at containing small bits of information.</p>}
+            </div>
+            <div class="card-action">
+              ${4:<a href="#">This is a link</a>}
+            </div>
+          </div>
+        </div>
+      </div>
+      """
+  'Materialize Card with sticky actions':
+    'prefix': 'm-card:stick-action'
+    'body': """
+      <div class="card sticky-action">
+        ${1:...}
+
+        <div class="card-action">${2:...}</div>
+
+        <div class="card-reveal">${3:...}</div>
+      </div>
+      """
+  'Materialize Card with Tabs':
+    'prefix': 'm-card:tabs'
+    'body': """
+      <div class="card">
+        <div class="card-content">
+          ${1:<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>}
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width">
+            <li class="tab"><a href="#test4">${2:Test 1}</a></li>
+            <li class="tab"><a class="active" href="#test5">${3:Test 2}</a></li>
+            <li class="tab"><a href="#test6">${4:Test 3}</a></li>
+          </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+          <div id="test4">${5:Test 1}</div>
+          <div id="test5">${5:Test 2}</div>
+          <div id="test6">${5:Test 3}</div>
+        </div>
+      </div>
+      """
   'Materialize revile large card':
     'prefix': 'm-revile-card:lg'
     'body': """
